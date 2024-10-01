@@ -15,16 +15,10 @@
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, nur, ... }: {
     darwinConfigurations = {
       # m2-macbook-pro 
-      "m2-macbook-pro" = darwin.lib.darwinSystem {
+      "ripbook" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
         modules = [ ./hosts/m2-macbook-pro.nix ];
-      };
-      # intel-macbook (used for CI to test updates)
-      "intel-macbook" = darwin.lib.darwinSystem {
-        system = "x86_64-darwin";
-        specialArgs = inputs;
-        modules = [ ./hosts/intel-macbook.nix ];
       };
     };
   };

@@ -15,7 +15,6 @@
         darkreader
         firenvim
         gnome-shell-integration
-        okta-browser-plugin
         privacy-badger
         private-relay
         redirector
