@@ -2,7 +2,7 @@
 
 
 let
-  hostname = "ripbook";
+  hostname = "m2-macbook-pro";
   username = "stein";
 in {
   imports = [
