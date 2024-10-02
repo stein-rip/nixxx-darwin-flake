@@ -2,11 +2,11 @@
 
 
 let
-  hostname = "m2-macbook-pro";
+  hostname = "ripbook";
   username = "stein";
 in {
   imports = [
-    ../roles/m2.nix
+    ../roles/ripbook.nix
     ../roles/defaults.nix
     ../roles/brew.nix
     ../roles/yabai.nix
@@ -22,7 +22,7 @@ in {
   # Set hostname
   networking.hostName = "${hostname}";
 
-  # Always show menu bar on M2 Macbook Pro
+  # Always show menu bar on ripbook
   system.defaults.NSGlobalDomain._HIHideMenuBar = lib.mkForce false;
 
   system.stateVersion = 4;

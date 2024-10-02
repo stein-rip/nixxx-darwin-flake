@@ -14,11 +14,11 @@
 
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, nur, ... }: {
     darwinConfigurations = {
-      # m2-macbook-pro 
+      # ripbook 
       "ripbook" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
-        modules = [ ./hosts/m2-macbook-pro.nix ];
+        modules = [ ./hosts/ripbook.nix ];
       };
     };
   };
