@@ -14,11 +14,11 @@
 
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, nur, ... }: {
     darwinConfigurations = {
-      # ripbook 
-      "ripbook" = darwin.lib.darwinSystem {
+      # m2 
+      "m2" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
-        modules = [ ./hosts/ripbook.nix ];
+        modules = [ ./hosts/m2.nix ];
       };
     };
   };

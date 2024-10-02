@@ -2,16 +2,16 @@
 
 
 let
-  hostname = "ripbook";
+ # hostname = "ripbook";
   username = "stein";
 in {
   imports = [
-    ../roles/ripbook.nix
-    ../roles/defaults.nix
-    ../roles/brew.nix
-    ../roles/yabai.nix
-    ../roles/network.nix
     ../roles/home-manager/settings.nix
+    ../roles/brew.nix
+    ../roles/defaults.nix
+    ../roles/network.nix
+    ../roles/ripbook.nix
+    ../roles/yabai.nix
   ];
   # Define user settings
   users.users.${username} = import ../roles/user.nix { inherit config; inherit pkgs; };
