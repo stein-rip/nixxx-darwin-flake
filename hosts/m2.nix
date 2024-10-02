@@ -20,7 +20,7 @@ in {
   home-manager.users.${username} = import ../roles/home-manager/user.nix;
 
   # Set hostname
-  networking.hostName = "${hostname}";
+  networking.hostName = "ripbook";
 
   # Always show menu bar on ripbook
   system.defaults.NSGlobalDomain._HIHideMenuBar = lib.mkForce false;
