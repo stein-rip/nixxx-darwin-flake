@@ -16,8 +16,7 @@
     pkgs.vscode
     pkgs.kitty
     pkgs.firefox
-    pkgs.flake-checker
-    pkgs.darwin.xcode
+    
   ];
 
 }
