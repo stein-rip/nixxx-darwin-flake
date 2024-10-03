@@ -1,6 +1,5 @@
 { config, pkgs, lib, home-manager, nur, ... }:
 
-
 let
  # hostname = "ripbook";
   username = "stein";
@@ -25,5 +24,5 @@ in {
   # Always show menu bar on ripbook
   system.defaults.NSGlobalDomain._HIHideMenuBar = lib.mkForce false;
 
-  system.stateVersion = 4;
+  system.stateVersion = 5;
 }

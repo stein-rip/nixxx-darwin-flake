@@ -13,13 +13,9 @@
   };
 
   # Necessary for using flakes on this system.
-  # nix.settings.experimental-features = "nix-command flakes";
-  # nix.extra-experimental-features = "nix-command";
+   #nix.settings.experimental-features = "nix-command flakes";
+   #nix.extra-experimental-features = "nix-command";
  
-
-
-
-
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, nur, ... }: {
     darwinConfigurations = {
       # m2 
