@@ -3,7 +3,7 @@
 {
   description = "stein";
   name = "stein";
-  shell = pkgs.bash;
+  shell = pkgs.zsh;
   # These packages will only be installed for your user
   # The binaries will be available in the following path: /etc/profiles/per-user/$USER/bin
   packages = [
@@ -16,7 +16,6 @@
     pkgs.vscode
     pkgs.kitty
     pkgs.firefox
-    
-  ];
+    ];
 
 }

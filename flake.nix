@@ -12,14 +12,24 @@
     nur.url = "github:nix-community/NUR";
   };
 
+  # Necessary for using flakes on this system.
+  # nix.settings.experimental-features = "nix-command flakes";
+  # nix.extra-experimental-features = "nix-command";
+ 
+
+
+
+
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, nur, ... }: {
     darwinConfigurations = {
       # m2 
       "m2" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
-        modules = [ ./hosts/m2.nix ];
+        modules = [ ./hosts/m2 ];
       };
     };
   };
+
+ 
 }
