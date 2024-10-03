@@ -5,7 +5,7 @@
 , substituteAll
 , stdenv
 , profile ? "/nix/var/nix/profiles/system"
-, nixPackage ? "/nix/var/nix/profiles/default"
+, nixPackage ? "/nix/var/nix/profiles/"
 , systemPath ? "$HOME/.nix-profile/bin:/etc/profiles/per-user/$USER/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin"
 }:
 

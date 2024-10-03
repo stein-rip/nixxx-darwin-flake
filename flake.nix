@@ -24,6 +24,14 @@
         specialArgs = inputs;
         modules = [ ./hosts/m2 ];
       };
+
+    # Other configurations
+    "intel" = darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      specialArgs = inputs;
+      modules = [ ./hosts/intel-macbook.nix ];
+    };
+
     };
   };
 
